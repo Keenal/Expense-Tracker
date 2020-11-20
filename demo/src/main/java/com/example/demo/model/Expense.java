@@ -1,24 +1,29 @@
 package com.example.demo.model;
 
+import java.time.Instant;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
 import lombok.NoArgsConstructor;
 
+@AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name="category")
-public class Category {
+@Data
+@Table(name="expense")
+public class Expense {
 	
 	@Id
 	private Long id;
 	
-	private String name;
+	private Instant expensedata;
 	
-	@ManyToOne(cascade=CascadeType.PERSIST)
-	private User user; 
+	private String descipt;
+	
 	
 	
 
