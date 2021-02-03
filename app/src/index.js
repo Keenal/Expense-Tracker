@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Home from './Category'
+import Home from './Home'
 import 'bootstrap/dist/css/bootstrap.css'
 import reportWebVitals from './reportWebVitals';
 
